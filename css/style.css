@@ -1,0 +1,50 @@
+/* --- Proprietà generali --- */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+.container{
+  padding: 0 10%;
+}
+.clearfix:after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* --- Proprietà header --- */
+header{
+  min-height: 200px; /* debug */
+  background-color: red; /* debug */
+}
+
+/* --- Prorpietà main --- */
+main{
+  background-color: lightblue; /* debug */
+}
+
+  /* --- Riga --- */
+.row{
+  background-color: blue;/* debug */
+  min-height: 100px;/* debug */
+  margin-bottom: 10px;
+}
+  /* --- Elementi colonna float --- */
+.tri-sezione{
+  float: left;
+  width: calc(100% / 3 - 20px);
+  margin: 10px 10px;
+  height: 80px;/* debug */
+  background-color: dodgerblue;/* debug */
+}
+.bi-sezione{
+  float: left;
+  width: calc(100% / 2 - 20px);
+  margin: 10px 10px;
+  height: 80px;/* debug */
+  background-color: dodgerblue;/* debug */
+}
