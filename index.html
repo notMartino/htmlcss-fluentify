@@ -7,49 +7,144 @@
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header class="container">
 
+    <header class="container clearfix">
+      <a href="index.html"><img src="img/logo.svg" alt="Logo Fiventify"></a>
+
+      <!-- Lista nav bar -->
+      <nav>
+          <ul>
+            <li><a class="address" href="#">IL METODO</a></li>
+
+            <li><a class="address" href="#">LA TECNOLOGIA</a></li>
+
+            <li><a  class="address" href="#">REAL-LFE ENGLISH</a></li>
+
+            <li><a class="address" href="#">SOLUZIONI AZIENDALI</a></li>
+          </ul>
+
+        <!-- Lista nav bar allienata a DX -->
+          <ul class="right">
+            <li><a class="address" href="#">DIVENTA UN TUTOR</a></li>
+
+            <li>
+              <a class="address bottone" href="#">LOGIN</a>
+            </li>
+
+            <li>
+              <a class="address bottone verde" href="#">STRUTTURA UN PIANO</a>
+            </li>
+          </ul>
+      </nav>
     </header>
 
-    <main class="container">
-      <!-- Sezione in testa grigia -->
-      <section class="row">
+    <main>
+      <!-- Riga Jumbo -->
+      <section>
+        <div class="jumborow container">
+            <img src="img/background-header.png" alt="Uomini che parlano">
 
+            <div>
+              <h1>Scegli l'inglese studiato per i professionisti</h1>
+              <a class="address bottone verde" href="#"> STRUTTURA PIANO</a>
+            </div>
+          </div>
+      </section>
+
+      <!-- Sezione in testa grigia -->
+      <section class="grigiarow">
+        <div class="container">
+          <h1>Le scuole di lingua tradizionali non sono efficaci</h1>
+          <p>Solo un corso inconcentrato sulla Fluency può portare ad una soluzione definitiva concreta</p>
+        </div>
       </section>
 
       <!-- Sezione contenuto centrale in 3 parti -->
-      <section class="row clearfix">
-        <div class="tri-sezione">
+      <section class="container">
 
-        </div>
+        <!-- Riga trisezione -->
+        <div class="clearfix">
+          <!-- Colonna 1 -->
+          <div class="tri-sezione">
+            <img src="img/profile.svg" alt="Profile">
+            <h1 class="title">Piano formativo configurato sul proprio livello</h1>
+            <hr>
+            <p class="testo">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
 
-        <div class="tri-sezione">
+          <!-- Colonna 2 -->
+          <div class="tri-sezione">
+            <img src="img/computer.svg" alt="Profile">
+            <h1 class="title">Affiancamento costante del tutor</h1>
+            <hr>
+            <p class="testo">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
 
-        </div>
-
-        <div class="tri-sezione">
-
+          <!-- Colonna 3 -->
+          <div class="tri-sezione">
+            <img src="img/doc.svg" alt="Profile">
+            <h1 class="title">Monitora i tuoi progressi costantemente</h1>
+            <hr>
+            <p class="testo">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
         </div>
       </section>
 
+      <hr>
+
       <!-- Sezione contenuto in 2 parti -->
-      <section class="row clearfix">
-        <div class="bi-sezione">
-
-        </div>
-
-        <div class="bi-sezione">
-
+      <section class="container">
+        <!-- Riga -->
+        <div class="clearfix">
+          <!-- Colonna 1 -->
+          <div class="bi-sezione">
+            <img src="img/mountain.svg" alt="Montagna">
+          </div>
+          <!-- Colonna 2 -->
+          <div class="bi-sezione">
+            <h1>Scorpi il tuo livello iniale e struttura un piano personalizzato</h1>
+            <p class="testo">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <a href="#">Scorpi il nostro test di placement</a>
+          </div>
         </div>
       </section>
 
       <!-- Sezione finale grigia -->
-      <section class="row">
+      <section>
+        <!-- Riga finale -->
+        <div class="container grigiarow clearfix">
+          <!-- Colonna 1 -->
+          <div class="foot-left">
+            <h1>Struttura un piano</h1>
+          </div>
 
+          <!-- Colonna 2 -->
+          <div class="foot-left">
+            Sono:
+            <select class="selezione" name="Genere">
+              <option value="">Seleziona</option>
+              <option value="Maschio">Maschio</option>
+              <option value="Femmina">Femmina</option>
+            </select>
+
+            <a class="address bottone verde" href="#">VISUALIZZA IL TUO PIANO</a>
+          </div>
+        </div>
       </section>
+
+      <!-- Help fixed -->
+      <a class="address bottone verde fixed" href="#">HELP</a>
     </main>
 
   </body>

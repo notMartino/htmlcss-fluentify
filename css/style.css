@@ -18,33 +18,190 @@ body{
 
 /* --- Proprietà header --- */
 header{
-  min-height: 200px; /* debug */
-  background-color: red; /* debug */
+  background-color: rgba(19, 53, 108, 1);
+}
+  /* --- Logo --- */
+header img{
+  width: 113px;
+  margin: 10px 20px 0 0;
+  float: left;
+}
+  /* --- Proprietà lista navbar con address ---  */
+nav{
+  width: calc(100% - 133px);
+  float: left;
+  margin-top: 8px;
+}
+nav, nav ul, nav li, nav li a{
+  display: inline-block;
+}
+nav ul{
+  list-style-type: none;
+}
+nav li{
+  margin-right: 10px;
+  margin-top: 5px;
+}
+nav li:last-child{
+  margin-right: 0;
+}
+.address{
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 10px 5px;
+  border: 2px solid transparent;
+  display: inline-block;
+  min-height: 30px;
+}
+
+  /* --- Link allieneati a DX --- */
+ul.right{
+  float: right;
+}
+/* --- Address "bottoni" --- */
+.address.bottone{
+  border-color: white;
+  border-radius: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.address.bottone.verde{
+  border-color: transparent;
+  background-color: rgba(84, 194, 0, 1);
 }
 
 /* --- Prorpietà main --- */
-main{
-  background-color: lightblue; /* debug */
+  /* --- Righe/Rows --- */
+
+  /* --- Riga jumborow--- */
+.jumborow{
+  min-height: 400px;
+  background-color: rgba(19, 53, 108, 1);
+  position: relative;
+  overflow: hidden;
+}
+/* --- Contenuto Jumborow --- */
+.jumborow img{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  max-height: 350px;
+}
+.jumborow > div{
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  width: 50%;
+}
+.jumborow h1{
+  color: white;
+  font-size: calc(20px + 1.8vw);
+  margin-bottom: 20px;
 }
 
-  /* --- Riga --- */
-.row{
-  background-color: blue;/* debug */
-  min-height: 100px;/* debug */
-  margin-bottom: 10px;
+  /* --- Riga grigia --- */
+.grigiarow{
+  padding-top: 40px;
+  background-color: lightgrey;
+  text-align: center;
 }
+  /* --- Contenuto riga grigia --- */
+.grigiarow h1, .bi-sezione h1{
+  font-size: 25px;
+}
+.grigiarow p{
+  font-size: 18px;
+  padding: 20px 0 40px;
+  color: rgb(100, 100,100);
+}
+
   /* --- Elementi colonna float --- */
 .tri-sezione{
   float: left;
-  width: calc(100% / 3 - 20px);
-  margin: 10px 10px;
-  height: 80px;/* debug */
-  background-color: dodgerblue;/* debug */
+  width: calc(100% / 3 - 14px);
+  margin: 40px 14px 0 0;
+  text-align: center;
+  overflow: hidden;
+  word-wrap: break-word;
 }
+.tri-sezione:nth-child(2){
+  margin-left: 7px;
+  margin-right: 7px;
+}
+.tri-sezione:last-child{
+  margin-right: 0;
+  margin-left: 14px;
+}
+  /* --- Contenuto colonna trisezione--- */
+.tri-sezione img{
+  height: 120px;
+}
+.tri-sezione .title{
+  color: rgba(84, 194, 0, 1);
+  margin: 20px 0;
+  font-size: 28px;
+  min-height: 70px;
+}
+.tri-sezione hr{
+  min-width: 50px;
+  width: 30%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+.tri-sezione .testo, .bi-sezione .testo{
+  color: rgb(100, 100,100);
+  margin: 20px 0;
+  font-size: 16px;
+}
+/* --- HR Divisorio --- */
+main > hr{
+  width: 98%;
+  margin: auto;
+  border-color: rgba(222, 223, 221, 1);
+}
+
+/* --- Colonna bisezione--- */
 .bi-sezione{
   float: left;
-  width: calc(100% / 2 - 20px);
-  margin: 10px 10px;
-  height: 80px;/* debug */
-  background-color: dodgerblue;/* debug */
+  width: calc(100% / 2 - 80px);
+  margin: 40px 40px;
+}
+.bi-sezione:first-child{
+  text-align: center;
+}
+  /* --- Contenuto bisezione--- */
+.bi-sezione img{
+  width: 90%;
+}
+
+/* --- Sezione float in barra grigiarow alla fine --- */
+/* --- Colonna --- */
+.foot-left{
+  float: left;
+  width: 50%;
+  color: grey;
+  margin-bottom: 40px;
+}
+  /* --- Contenuto colonna --- */
+.foot-left h1{
+  color: black;
+}
+  /* --- Input select per genere ---  */
+.selezione{
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid grey;
+  font-size: 20px;
+  color: grey;
+  margin: 0 10px 10px;
+}
+
+/* --- Help button fixed --- */
+.fixed{
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
 }
